@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Irmãos Menonitas</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.0/dist/tailwind.min.css" rel="stylesheet">
+  <script defer src="script.js"></script>
+</head>
+<body class="min-h-screen bg-white">
+
+  <!-- Header -->
+  <header class="bg-white shadow-sm border-b border-gray-100 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <!-- Logo -->
+        <a href="home.html" class="flex items-center space-x-3">
+          <div class="w-12 h-12 bg-gradient-to-r from-blue-600 to-blue-800 rounded-full flex items-center justify-center shadow-lg">
+            <svg class="w-7 h-7 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16z" clip-rule="evenodd" />
+            </svg>
+          </div>
+          <div class="hidden sm:block">
+            <h1 class="text-2xl font-bold text-gray-900">Irmãos Menonitas</h1>
+            <p class="text-sm text-blue-600 font-medium">Ágape</p>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden lg:flex items-center space-x-8">
+          <a href="Layout.html" class="text-lg font-medium transition-all duration-300 hover:text-blue-600 hover:scale-105 text-gray-700">Início</a>
+          <a href="historia.html" class="text-lg font-medium transition-all duration-300 hover:text-blue-600 hover:scale-105 text-gray-700">Nossa História</a>
+          <a href="contatos.html" class="text-lg font-medium transition-all duration-300 hover:text-blue-600 hover:scale-105 text-gray-700">Contatos</a>
+          <a href="oracoes.html" class="text-lg font-medium transition-all duration-300 hover:text-blue-600 hover:scale-105 text-gray-700">Pedidos de Oração</a>
+        </nav>
+
+        <!-- User Menu / Login -->
+        <div class="flex items-center space-x-4" id="user-menu">
+          <button id="login-button" class="hidden sm:block text-blue-600 hover:bg-blue-50 border-blue-600">
+            Entrar
+          </button>
+
+          <button id="logout-button" class="hidden sm:block text-red-600 hover:bg-red-50">
+            Sair
+          </button>
+
+          <!-- Mobile menu button -->
+          <button id="mobile-menu-button" class="lg:hidden text-gray-600">
+            ☰
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div id="mobile-nav" class="lg:hidden bg-white border-t border-gray-200 shadow-lg" style="display: none;">
+      <div class="px-4 pt-4 pb-6 space-y-3">
+        <a href="Layout.html" class="block px-4 py-3 text-lg font-medium rounded-lg transition-colors text-gray-700 hover:bg-gray-50">Início</a>
+        <a href="historia.html" class="block px-4 py-3 text-lg font-medium rounded-lg transition-colors text-gray-700 hover:bg-gray-50">Nossa História</a>
+        <a href="contatos.html" class="block px-4 py-3 text-lg font-medium rounded-lg transition-colors text-gray-700 hover:bg-gray-50">Contatos</a>
+        <a href="oracoes.html" class="block px-4 py-3 text-lg font-medium rounded-lg transition-colors text-gray-700 hover:bg-gray-50">Pedidos de Oração</a>
+
+        <div id="mobile-user" class="space-y-2"></div>
+      </div>
+    </div>
+  </header>
+  <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Igreja Ágape</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.0/dist/tailwind.min.css" rel="stylesheet">
+  <script defer src="script.js"></script>
+</head>
+<body class="min-h-screen">
+
+  <!-- Hero Section -->
+  <section class="relative bg-gradient-to-br from-blue-50 via-white to-blue-50 overflow-hidden">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_40%,rgba(59,130,246,0.1),transparent_50%)]"></div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="space-y-8">
+          <div class="space-y-4">
+            <h1 class="text-5xl lg:text-7xl font-bold text-gray-900 leading-tight">
+              Bem-vindos à
+              <span class="block text-blue-600">Igreja Ágape</span>
+            </h1>
+            <p class="text-xl text-gray-600 leading-relaxed max-w-lg">
+              Uma comunidade menonita dedicada ao amor de Cristo, localizada na Fazenda Rio Grande. 
+              Venha fazer parte da nossa família de fé.
+            </p>
+          </div>
+          
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="historia.html">
+              <button class="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg font-semibold shadow-lg hover:shadow-xl transition-all">
+                Nossa História
+                <svg class="ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16z" clip-rule="evenodd" />
+                </svg>
+              </button>
+            </a>
+            <a href="oracoes.html">
+              <button class="w-full sm:w-auto border-blue-600 text-blue-600 hover:bg-blue-50 px-8 py-4 text-lg font-semibold">
+                Pedidos de Oração
+              </button>
+            </a>
+          </div>
+        </div>
+        
+        <div class="relative">
+          <div class="aspect-square rounded-3xl bg-gradient-to-br from-blue-100 to-blue-200 p-8 shadow-2xl">
+            <img 
+              src="https://images.unsplash.com/photo-1438232992991-995b7058bbb3?w=600&h=600&fit=crop&crop=center" 
+              alt="Igreja"
+              class="w-full h-full object-cover rounded-2xl shadow-lg"
+            />
+          </div>
+          <div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl">
+            <div class="flex items-center space-x-3">
+              <svg class="w-8 h-8 text-blue-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16z" clip-rule="evenodd" />
+              </svg>
+              <div>
+                <p class="font-semibold text-gray-900">Irmãos Menonitas</p>
+                <p class="text-sm text-blue-600">Fazenda Rio Grande</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Valores Section -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 space-y-4">
+        <h2 class="text-4xl lg:text-5xl font-bold text-gray-900">
+          Nossos <span class="text-blue-600">Valores</span>
+        </h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          Fundamentados na fé cristã e nos princípios menonitas de paz, simplicidade e comunidade
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="bg-white p-8 shadow-lg hover:shadow-xl transition-all duration-300 group cursor-pointer">
+          <div class="w-16 h-16 mx-auto bg-blue-100 rounded-2xl flex items-center justify-center group-hover:bg-blue-600 transition-colors">
+            <svg class="w-8 h-8 text-blue-600 group-hover:text-white transition-colors" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16z" clip-rule="evenodd" />
+            </svg>
+          </div>
+          <div class="space-y-3">
+            <h3 class="text-xl font-bold text-gray-900">Amor</h3>
+            <p class="text-gray-600 leading-relaxed">O amor de Cristo nos une como família, sempre colocando o próximo em primeiro lugar</p>
+          </div>
+        </div>
+        <div class="bg-white p-8 shadow-lg hover:shadow-xl transition-all duration-300 group cursor-pointer">
+          <div class="w-16 h-16 mx-auto bg-blue-100 rounded-2xl flex items-center justify-center group-hover:bg-blue-600 transition-colors">
+            <svg class="w-8 h-8 text-blue-600 group-hover:text-white transition-colors" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16z" clip-rule="evenodd" />
+            </svg>
+          </div>
+          <div class="space-y-3">
+            <h3 class="text-xl font-bold text-gray-900">Comunidade</h3>
+            <p class="text-gray-600 leading-relaxed">Construindo relacionamentos genuínos baseados no cuidado mútuo e na fé compartilhada</p>
+          </div>
+        </div>
+        <div class="bg-white p-8 shadow-lg hover:shadow-xl transition-all duration-300 group cursor-pointer">
+          <div class="w-16 h-16 mx-auto bg-blue-100 rounded-2xl flex items-center justify-center group-hover:bg-blue-600 transition-colors">
+            <svg class="w-8 h-8 text-blue-600 group-hover:text-white transition-colors" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16z" clip-rule="evenodd" />
+            </svg>
+          </div>
+          <div class="space-y-3">
+            <h3 class="text-xl font-bold text-gray-900">Palavra</h3>
+            <p class="text-gray-600 leading-relaxed">A Bíblia como nossa fonte de verdade, orientando todas as nossas decisões e ações</p>
+          </div>
+        </div>
+        <div class="bg-white p-8 shadow-lg hover:shadow-xl transition-all duration-300 group cursor-pointer">
+          <div class="w-16 h-16 mx-auto bg-blue-100 rounded-2xl flex items-center justify-center group-hover:bg-blue-600 transition-colors">
+            <svg class="w-8 h-8 text-blue-600 group-hover:text-white transition-colors" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16z" clip-rule="evenodd" />
+            </svg>
+          </div>
+          <div class="space-y-3">
+            <h3 class="text-xl font-bold text-gray-900">Oração</h3>
+            <p class="text-gray-600 leading-relaxed">Mantendo uma vida de oração constante, buscando a vontade de Deus em todas as coisas</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Horários Section -->
+  <section class="py-20 bg-gradient-to-r from-blue-50 to-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="space-y-8">
+          <div class="space-y-4">
+            <h2 class="text-4xl lg:text-5xl font-bold text-gray-900">
+              Venha nos <span class="text-blue-600">Visitar</span>
+            </h2>
+            <p class="text-xl text-gray-600 leading-relaxed">
+              Todos são bem-vindos em nossa comunidade. Venha como está e experimente o amor de Deus conosco.
+            </p>
+          </div>
+
+          <div class="space-y-6">
+            <div class="flex items-center space-x-4 p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow">
+              <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center">
+                <svg class="w-6 h-6 text-blue-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16z" clip-rule="evenodd" />
+                </svg>
+              </div>
+              <div class="flex-1">
+                <h4 class="font-semibold text-gray-900">Culto Principal</h4>
+                <p class="text-gray-600">Domingos às 9:00h</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative">
+          <img 
+            src="https://images.unsplash.com/photo-1507692049790-de58290a4334?w=600&h=800&fit=crop" 
+            alt="Comunidade em oração"
+            class="w-full h-[600px] object-cover rounded-3xl shadow-2xl"
+          />
+          <div class="absolute bottom-8 left-8 right-8 bg-white/90 backdrop-blur-sm p-6 rounded-2xl">
+            <div class="flex items-start space-x-3">
+              <svg class="w-6 h-6 text-blue-600 mt-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16z" clip-rule="evenodd" />
+              </svg>
+              <div>
+                <h4 class="font-semibold text-gray-900">Localização</h4>
+                <p class="text-gray-600">Fazenda Rio Grande, PR</p>
+                <p class="text-sm text-blue-600 font-medium mt-2">Todos são bem-vindos!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="py-20 bg-blue-600">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="space-y-8">
+        <h2 class="text-4xl lg:text-5xl font-bold text-white">
+          Faça Parte da Nossa <span class="text-blue-200">Família</span>
+        </h2>
+        <p class="text-xl text-blue-100 leading-relaxed max-w-2xl mx-auto">
+          Se você está em busca de uma comunidade acolhedora onde pode crescer na fé e servir ao próximo, 
+          você encontrou o seu lugar.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="contatos.html">
+            <button class="w-full sm:w-auto px-8 py-4 text-lg font-semibold bg-blue-700 hover:bg-blue-800 text-white">
+              Entre em Contato
+            </button>
+          </a>
+          <a href="oracoes.html">
+            <button class="w-full sm:w-auto px-8 py-4 text-lg font-semibold border-white text-white hover:bg-white hover:text-blue-600">
+              Compartilhe uma Oração
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white mt-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <!-- Igreja Info -->
+        <div class="space-y-4">
+          <div class="flex items-center space-x-3">
+            <div class="w-10 h-10 bg-gradient-to-r from-blue-500 to-blue-700 rounded-full flex items-center justify-center">
+              <svg class="w-5 h-5 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16z" clip-rule="evenodd" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold">Irmãos Menonitas</h3>
+              <p class="text-blue-400">Ágape</p>
+            </div>
+          </div>
+          <p class="text-gray-300 leading-relaxed">
+            Uma comunidade de fé dedicada ao amor de Cristo e ao serviço ao próximo, localizada na Fazenda Rio Grande.
+          </p>
+        </div>
+
+        <!-- Contato -->
+        <div class="space-y-4">
+          <h3 class="text-xl font-semibold">Contato</h3>
+          <div class="space-y-3">
+            <div class="flex items-center space-x-3">
+              <svg class="w-5 h-5 text-blue-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16z" clip-rule="evenodd" />
+              </svg>
+              <span class="text-gray-300">Fazenda Rio Grande</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <svg class="w-5 h-5 text-blue-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16z" clip-rule="evenodd" />
+              </svg>
+              <span class="text-gray-300">(41) 99999-9999</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <svg class="w-5 h-5 text-blue-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16z" clip-rule="evenodd" />
+              </svg>
+              <span class="text-gray-300">contato@menonitasagape.com.br</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Horários -->
+        <div class="space-y-4">
+          <h3 class="text-xl font-semibold">Nossos Encontros</h3>
+          <div class="space-y-2 text-gray-300">
+            <p><strong class="text-white">Culto Principal:</strong> Domingos às 9h</p>
+            <p><strong class="text-white">Estudo Bíblico:</strong> Quartas às 19h30</p>
+            <p><strong class="text-white">Jovens:</strong> Sábados às 19h</p>
+            <p><strong class="text-white">Crianças:</strong> Domingos às 9h</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+        <p class="text-gray-400">
+          © 2024 Igreja Irmãos Menonitas Ágape. Todos os direitos reservados.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
