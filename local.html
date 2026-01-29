@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Localização da Empresa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Página Principal -->
+    <div class="container" id="mainPage">
+        <div class="hero-section">
+            <div class="hero-content">
+                <h1><i class="fas fa-map-marker-alt"></i> Nossa Localização</h1>
+                <p class="hero-description">
+                    Estamos localizados em um ponto estratégico para melhor atendê-lo. 
+                    Venha nos visitar e conhecer nossas instalações!
+                </p>
+                
+                <div class="info-cards">
+                    <div class="info-card">
+                        <i class="fas fa-clock"></i>
+                        <h3>Horário de Funcionamento</h3>
+                        <p>Segunda a Sexta: 8h às 18h</p>
+                        <p>Sábado: 9h às 13h</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <i class="fas fa-phone"></i>
+                        <h3>Contato</h3>
+                        <p>(11) 9999-9999</p>
+                        <p>contato@empresa.com</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <i class="fas fa-car"></i>
+                        <h3>Estacionamento</h3>
+                        <p>Amplo estacionamento</p>
+                        <p>Vagas para clientes</p>
+                    </div>
+                </div>
+                
+                <button id="showLocationBtn" class="cta-button">
+                    <i class="fas fa-map"></i> Ver Localização no Mapa
+                </button>
+            </div>
+            
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                     alt="Prédio comercial moderno">
+            </div>
+        </div>
+    </div>
+
+    <!-- Página de Localização com Mapa -->
+    <div id="locationPage" class="location-page hidden">
+        <div class="location-header">
+            <button id="backToMainBtn" class="back-button">
+                <i class="fas fa-arrow-left"></i> Voltar
+            </button>
+            <h1><i class="fas fa-map-marked-alt"></i> Nossa Localização</h1>
+        </div>
+        
+        <div class="location-content">
+            <div class="map-container">
+                <div class="map-frame">
+                    <!-- Google Maps Embed -->
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.196830833479!2d-46.65424928447641!3d-23.561402667476027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1678891266784!5m2!1spt-BR!2sbr" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Localização da Empresa no Google Maps">
+                    </iframe>
+                </div>
+                
+                <div class="map-controls">
+                    <button id="openMapsBtn" class="map-control-btn">
+                        <i class="fas fa-external-link-alt"></i> Abrir no Google Maps
+                    </button>
+                    <button id="getDirectionsBtn" class="map-control-btn">
+                        <i class="fas fa-directions"></i> Traçar Rota
+                    </button>
+                </div>
+            </div>
+            
+            <div class="location-info">
+                <div class="address-card">
+                    <h2><i class="fas fa-building"></i> Endereço</h2>
+                    <div class="address-details">
+                        <p><strong>Av. Paulista, 1000</strong></p>
+                        <p>Bela Vista</p>
+                        <p>São Paulo - SP</p>
+                        <p>CEP: 01310-100</p>
+                    </div>
+                </div>
+                
+                <div class="contact-card">
+                    <h2><i class="fas fa-address-book"></i> Contato</h2>
+                    <div class="contact-details">
+                        <p><i class="fas fa-phone"></i> (11) 3333-4444</p>
+                        <p><i class="fas fa-phone-alt"></i> (11) 99999-8888</p>
+                        <p><i class="fas fa-envelope"></i> contato@empresa.com</p>
+                        <p><i class="fas fa-globe"></i> www.empresa.com.br</p>
+                    </div>
+                </div>
+                
+                <div class="transport-card">
+                    <h2><i class="fas fa-bus"></i> Como Chegar</h2>
+                    <div class="transport-options">
+                        <div class="transport-option">
+                            <i class="fas fa-subway"></i>
+                            <span>Metrô: Estação Consolação (Linha Verde)</span>
+                        </div>
+                        <div class="transport-option">
+                            <i class="fas fa-bus"></i>
+                            <span>Ônibus: Linhas 175T, 5100, 702P</span>
+                        </div>
+                        <div class="transport-option">
+                            <i class="fas fa-car"></i>
+                            <span>Estacionamento no local</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hours-card">
+                    <h2><i class="fas fa-business-time"></i> Horários</h2>
+                    <div class="business-hours">
+                        <div class="day-hour">
+                            <span>Segunda - Sexta:</span>
+                            <span>8h às 18h</span>
+                        </div>
+                        <div class="day-hour">
+                            <span>Sábado:</span>
+                            <span>9h às 13h</span>
+                        </div>
+                        <div class="day-hour">
+                            <span>Domingo:</span>
+                            <span>Fechado</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="location-footer">
+            <p><i class="fas fa-info-circle"></i> Estamos ansiosos para recebê-lo em nossa unidade!</p>
+        </div>
+    </div>
+
+    <!-- Modal de Rota -->
+    <div id="directionsModal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3><i class="fas fa-directions"></i> Traçar Rota</h3>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p>Escolha como deseja traçar a rota até nossa localização:</p>
+                <div class="direction-options">
+                    <button id="carDirectionsBtn" class="direction-btn">
+                        <i class="fas fa-car"></i> De Carro
+                    </button>
+                    <button id="publicTransportBtn" class="direction-btn">
+                        <i class="fas fa-bus"></i> Transporte Público
+                    </button>
+                    <button id="walkingDirectionsBtn" class="direction-btn">
+                        <i class="fas fa-walking"></i> A Pé
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
